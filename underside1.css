@@ -1,0 +1,130 @@
+body {
+    background-color: #F2E9CE;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Grid-sektioner */
+.allesektioner {
+    display: grid;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    grid-template-columns: 1fr;
+}
+
+/* Bokse */
+.boks1 h1,
+.boks2 h1,
+.boks3 h1,
+.boks4 h1,
+.boks5 h1,
+.boks6 h1 {
+    width: 100%;
+    max-width: 320px;
+    height: 80px;
+    background-color: #404040;
+    border-radius: 12px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #F2E9CE;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    top: 50px;
+}
+
+/* Speciel styling til boks1 */
+.boks1 h1 {
+    background-color: #bf6f41;
+    font-size: 24px;
+    top: 20px;
+    padding: 30px;
+}
+
+/* Collapse kort */
+.card.card-body {
+    max-width: 320px;
+    margin: 10px auto;
+}
+
+/* Fast menu i bunden */
+.menu-wrapper {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.menu-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Navigation menu */
+.menu {
+    background-color: #F2B988;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu a {
+    color: black;
+}
+
+.menu i {
+    font-size: 20pt;
+}
+
+/* Responsivt design til større skærme */
+@media screen and (min-width: 768px) {
+    body {
+        max-width: none;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    .allesektioner {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .boks1 h1,
+    .boks2 h1,
+    .boks3 h1,
+    .boks4 h1,
+    .boks5 h1,
+    .boks6 h1 {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    section h1,
+    section h2 {
+        font-size: 18px;
+    }
+}
