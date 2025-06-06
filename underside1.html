@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8"> <!-- Gør det muligt at vise danske tegn -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gør siden responsiv -->
+  <title>Test Collapse</title> <!-- Titel i browserfanen -->
+
+  <!-- Henter Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Henter Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Din egen CSS-fil -->
+  <link href="underside1.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Toplogo -->
+<header class="header">
+  <img src="overskrift.png" alt="Logo" class="logo">
+</header>
+
+<main>
+
+  <!-- Intro-boks med overskrift -->
+  <div class="boks1">
+    <h1>sæt ord på det svære og hjælp både dig selv og andre videre.</h1>
+  </div>
+
+
+  <div class="collapse mt-2" id="ekstraBoks1">
+    <div class="card card-body">Ekstra indhold for boks1.</div>
+  </div>
+
+  <!-- Her starter alle sektioner -->
+  <div class="allesektioner">
+
+    <!-- Første emne: Sundhed -->
+    <section>
+      <div class="boks2" data-bs-toggle="collapse" data-bs-target="#ekstraBoks2">
+        <h1>Sundhed og omsorg</h1>
+      </div>
+      <div class="collapse mt-2" id="ekstraBoks2">
+        <div class="card card-body">
+          <p> Snak med Emilie, som er sygeplejerskepraktikant på hospitalet.</p>
+          <form class="input-group"> <!-- Bootstrap-form-gruppe -->
+            <label for="input2" class="visually-hidden">Skriv besked</label>
+            <input type="text" id="input2" class="form-control" placeholder="Skriv her...">
+            <button class="btn btn-primary" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Andet emne: IT -->
+    <section>
+      <div class="boks3" data-bs-toggle="collapse" data-bs-target="#ekstraBoks3">
+        <h1>IT og udvikling</h1>
+      </div>
+      <div class="collapse mt-2" id="ekstraBoks3">
+        <div class="card card-body">
+          <p>Snak med Jonas, som er i praktik som webudvikler i en startup.</p>
+          <form class="input-group">
+            <label for="input3" class="visually-hidden">Skriv besked</label>
+            <input type="text" id="input3" class="form-control" placeholder="Skriv her...">
+            <button class="btn btn-primary" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tredje emne: Økonomi -->
+    <section>
+      <div class="boks4" data-bs-toggle="collapse" data-bs-target="#ekstraBoks4">
+        <h1>Økonomi og regnskab</h1>
+      </div>
+      <div class="collapse mt-2" id="ekstraBoks4">
+        <div class="card card-body">
+          <p>Snak med Amina, som er regnskabspraktikant i en bank.</p>
+          <form class="input-group">
+            <label for="input4" class="visually-hidden">Skriv besked</label>
+            <input type="text" id="input4" class="form-control" placeholder="Skriv her...">
+            <button class="btn btn-primary" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fjerde emne: Socialt arbejde -->
+    <section>
+      <div class="boks5" data-bs-toggle="collapse" data-bs-target="#ekstraBoks5">
+        <h1>Socialrådgivning og velfærd</h1>
+      </div>
+      <div class="collapse mt-2" id="ekstraBoks5">
+        <div class="card card-body">
+          <p>Snak med Daniel, som er i praktik på et socialkontor.</p>
+          <form class="input-group">
+            <label for="input5" class="visually-hidden">Skriv besked</label>
+            <input type="text" id="input5" class="form-control" placeholder="Skriv her...">
+            <button class="btn btn-primary" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Femte emne: Pædagogik -->
+    <section>
+      <div class="boks6" data-bs-toggle="collapse" data-bs-target="#ekstraBoks6">
+        <h1>Pædagogik og undervisning</h1>
+      </div>
+      <div class="collapse mt-2" id="ekstraBoks6">
+        <div class="card card-body">
+          <p>Snak med Sofie, som er pædagogpraktikant i en vuggestue.</p>
+          <form class="input-group">
+            <label for="input6" class="visually-hidden">Skriv besked</label>
+            <input type="text" id="input6" class="form-control" placeholder="Skriv her...">
+            <button class="btn btn-primary" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+</main>
+
+<!-- Bundmenu med Bootstrap-ikoner -->
+<nav class="menu">
+  <a href="index.html"><i class="bi bi-house"></i></a>
+  <a href="underside1.html"><i class="bi bi-chat-left-text"></i></a>
+  <a href="underside2.html"><i class="bi bi-robot"></i></a>
+</nav>
+
+<!-- Bootstrap JS for collapse-effekten -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
